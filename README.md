@@ -11,6 +11,7 @@ A Rails App that utilizes the Smithsonian's collection to show the user informat
 
 ### Resources Used:
  - [When to use Yarn on Rails](https://dev.to/mbackermann/how-and-when-to-use-yarn-on-rails-3jm4)
+ - [Start Using Yarn With Rails Today](https://nithinbekal.com/posts/yarn-rails/)
  - [Rails Tutorial Book](https://www.railstutorial.org/book/beginning#sec-development_environment)
  - [Excon](https://github.com/excon/excon#getting-started)
  - [Using Embedded Ruby as a Template Language](https://levelup.gitconnected.com/use-embedded-ruby-as-a-template-language-85a85202f26f)

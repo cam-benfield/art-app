@@ -5,10 +5,7 @@ layout 'standard-lookup'
 
   def index
     @header = 'From the Smithsonian Collections'
-    stats_url = 'https://api.si.edu/openaccess/api/v1.0/stats'
-    get_response = request_api(stats_url).get()
-    @body = JSON.parse(get_response.body)
-    render template: 'layouts/standard-lookup'
+    @body = stats_lookup()
   end
 
   def itemLookup
@@ -30,4 +27,15 @@ layout 'standard-lookup'
       :debug_request => true
     )
   end
+
+  def stats_lookup
+    # private
+
+    stats_url = 'https://api.si.edu/openaccess/api/v1.0/stats'
+    get_response = request_api(stats_url).get()
+    json_response = JSON.parse(get_response.body)
+    @stats_response = json_response["response"]["units"]
+    @body = render template: 'layouts/_stats'
+  end
+
 end

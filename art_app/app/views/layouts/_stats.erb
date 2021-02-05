@@ -1,0 +1,14 @@
+<div class='object'>
+  <table>
+      <tr>
+        <th>Unit</th>
+        <th>Total Objects</th>
+      </tr>
+    <% @stats_response.each do |area| %>
+      <tr>
+        <td><%= area["unit"] %></td>
+        <td><%= area["total_objects"]%></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
