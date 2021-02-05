@@ -35,6 +35,10 @@ Things you may want to cover:
 
 * Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## Deployment instructions
+
+Register for a Smithsonian API Key at [https://api.data.gov/signup/](https://api.data.gov/signup/).
+
+Place that API Key into a directory in ``art-app/.secret/smithsonian.key``.
 
 * ...

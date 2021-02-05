@@ -7,15 +7,16 @@ layout 'standard-lookup'
     @header = 'From the Smithsonian Collections'
     stats_url = 'https://api.si.edu/openaccess/api/v1.0/stats'
     get_response = request_api(stats_url).get()
-    @body = get_response.body
+    @body = JSON.parse(get_response.body)
     render template: 'layouts/standard-lookup'
   end
 
   def itemLookup
     # https://api.si.edu/openaccess/api/v1.0/content/:id
+    @header = 'What would you like to search for?'
     search_url = 'https://api.si.edu/openaccess/api/v1.0/search'
     get_response = request_api(search_url).get(:headers => {'q' => '# DEBUG: drums'})
-    @body = get_response.body
+    @body = JSON.parse(get_response.body)
     render template: 'layouts/standard-lookup'
   end
 
