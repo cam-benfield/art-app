@@ -12,13 +12,14 @@
       <div id = "container">
         <div id = "header">
             <h1><%= @header %></h1>
+            <%= render template: 'layouts/_menu' %>
             <hr>
         </div>
 
         <div id = "content">
-            <%= @body %>
+        <%= render template: 'layouts/_search' %>
+        <%= @body %>
         </div>
-        <div id = "sidebar"></div>
       </div>
   </body>
 </html>

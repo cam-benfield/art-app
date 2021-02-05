@@ -1,0 +1,14 @@
+<div class='item'>
+  <table>
+      <tr>
+        <th>Title</th>
+        <th>Content</th>
+      </tr>
+    <% @items_response.each do |item| %>
+      <tr>
+        <td><%= item["title"] %></td>
+        <td><%= item["content"]%></td>
+      </tr>
+    <% end %>
+  </table>
+</div>

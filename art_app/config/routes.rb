@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   get '/smithsonian', to: 'smithsonian#index'
 
   get '/smithsonian/lookup', to: 'smithsonian#itemLookup'
+
+
 end
