@@ -2,12 +2,19 @@
   <table>
       <tr>
         <th>Title</th>
+        <th>Link</th>
         <th>Content</th>
+        <th>Unique Data</th>
+        <th>Source</th>
       </tr>
     <% @items_response.each do |item| %>
       <tr>
-        <td><%= item["title"] %></td>
-        <td><%= item["content"]%></td>
+        <% item_link = item["content"]['descriptiveNonRepeating']["record_link"] %>
+        <td><%= item["content"]["descriptiveNonRepeating"]["title_sort"] %></td>
+        <td><a href= "<%= item_link %>" >Link</a></td>
+        <td><%= item["content"] %></td>
+        <td><%= item["content"]["descriptiveNonRepeating"]%></td>
+        <td><%= item["content"]["descriptiveNonRepeating"]["data_source"]%></td>
       </tr>
     <% end %>
   </table>

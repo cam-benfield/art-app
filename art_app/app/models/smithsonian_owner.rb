@@ -1,0 +1,2 @@
+class SmithsonianOwner < ApplicationRecord
+end
