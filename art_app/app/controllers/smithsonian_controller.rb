@@ -1,5 +1,6 @@
 class SmithsonianController < ActionController::Base
 
+
 # Displays total objects available to lookup
   def index
     @header = 'From the Smithsonian Collections'
@@ -45,7 +46,7 @@ class SmithsonianController < ActionController::Base
       :q => "#{user_query}"})
     json_response = JSON.parse(get_response.body)
     @items_response = json_response["response"]["rows"]
-    render template: 'layouts/standard'
+    render template: 'layouts/standard-lookup'
   end
 
 end

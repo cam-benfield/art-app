@@ -1,31 +1,30 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns = "http://www.w3.org/1999/xhtml">
+
   <head>
-      <meta http-equiv = "Content-Type" content = "text/html; charset = iso-8859-1" />
-      <meta http-equiv = "Content-Language" content = "en-us" />
-      <script src='/assets/main.js'></script>
-      <title>Rails</title>
-    </head>
 
-    <body id = "library">
-      <div id = "container">
-        <div id = "header">
-            <h1><%= @header %></h1>
-            <%= render template: 'layouts/_menu' %>
-            <hr>
-        </div>
+  <meta http-equiv = "Content-Type" content = "text/html; charset = iso-8859-1" />
+  <meta http-equiv ="Content-Language"content="en-us" />
+  <script src='/assets/main.js'></script>
+  <title>Smithsonian Art App</title>
+  </head>
 
-        <div id = "content">
-          <%= @body %>
-          <%= form_tag('/smithsonian/lookup', :method => "get") do %>
-            <%= label_tag(:q, "Search for:") %>
-            <%= text_field_tag(:q) %>
-            <%= submit_tag("Search")%>
-          <% end %>
-          <%= render template: 'layouts/_stats' %>
-        </div>
-        <div id = "sidebar"></div>
+  <body id = "library">
+    <div id = "container">
+      <div id = "header">
+        <h1><%= @header %></h1>
+        <%= render template: 'layouts/_menu' %>
+        <hr>
+        <%= render template: 'layouts/_search' %>
       </div>
+
+      <div id = "content">
+        <%= @body %>
+        <%= render partial: "layouts/stats" %>
+      </div>
+      <div id = "sidebar">
+      </div>
+    </div>
   </body>
 </html>
