@@ -3,6 +3,15 @@
 
 A Rails App that utilizes the Smithsonian's collection to show the user information linked to the piece from other available APIs.
 
+## Deployment instructions
+
+Register for a Smithsonian API Key at [https://api.data.gov/signup/](https://api.data.gov/signup/).
+
+Place that API Key into a directory in ``art-app/.secret/smithsonian.key``.
+
+``bundle install``
+
+
 ### APIs Used:
  - [Smithsonian API](https://github.com/Smithsonian/OpenAccess)
  - [Harvard Art Museums](https://www.programmableweb.com/api/harvard-art-museums)
@@ -36,11 +45,3 @@ Things you may want to cover:
 * How to run the test suite
 
 * Services (job queues, cache servers, search engines, etc.)
-
-## Deployment instructions
-
-Register for a Smithsonian API Key at [https://api.data.gov/signup/](https://api.data.gov/signup/).
-
-Place that API Key into a directory in ``art-app/.secret/smithsonian.key``.
-
-* ...
