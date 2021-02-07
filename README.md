@@ -1,7 +1,9 @@
 # README - Ruby on Rails Project
 ## Author: Cam Benfield
 
-A Rails App that utilizes the Smithsonian's collection to show the user information linked to the piece from other available APIs.
+A Rails App that utilizes the Smithsonian's collection to show the user information linked to the piece.
+
+This project is largely complete, as it was intended as a practice for API calls. I may continue work on it to integrate other APIs, but I'm not sure just yet.
 
 ## Deployment instructions
 
@@ -28,17 +30,3 @@ Place that API Key into a directory in ``art-app/.secret/smithsonian.key``.
  - [Rails Girls Guide](https://guides.railsgirls.com/design-html-css)
  - [Backgrounds](https://www.toptal.com/designers/subtlepatterns/)
  - [Bootstrap](https://getbootstrap.com/s)
-
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database initialization
