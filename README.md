@@ -25,6 +25,8 @@ Place that API Key into a directory in ``art-app/.secret/smithsonian.key``.
  - [Excon](https://github.com/excon/excon#getting-started) https://rubygems.org/gems/excon/versions/0.79.0
  - [Using Embedded Ruby as a Template Language](https://levelup.gitconnected.com/use-embedded-ruby-as-a-template-language-85a85202f26f)
  - [Ruby on Rails Guide](https://guides.rubyonrails.org/layouts_and_rendering.html#rendering-by-default-convention-over-configuration-in-action)
+ - [Rails Girls Guide](https://guides.railsgirls.com/design-html-css)
+ - [Backgrounds](https://www.toptal.com/designers/subtlepatterns/)
 
 
 This README would normally document whatever steps are necessary to get the

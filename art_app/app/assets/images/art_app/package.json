@@ -1,0 +1,32 @@
+{
+  "name": "art-app",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Rails Tutorial Testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cam-benfield/rails-tutorial.git"
+  },
+  "author": "Cam Benfield",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cam-benfield/rails-tutorial/issues"
+  },
+  "homepage": "https://github.com/cam-benfield/rails-tutorial#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.5.1",
+    "ruby": "^0.6.1",
+    "@rails/actioncable": "^6.0.0",
+    "@rails/activestorage": "^6.0.0",
+    "@rails/ujs": "^6.0.0",
+    "turbolinks": "^5.2.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.11.2"
+  }
+}
