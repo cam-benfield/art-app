@@ -6,5 +6,8 @@ Rails.application.routes.draw do
 
   get '/smithsonian/lookup', to: 'smithsonian#itemLookup'
 
+  get '/smithsonian/item', to: 'smithsonian#itemLink'
+
+  get '/themet', to: 'application#index'
 
 end

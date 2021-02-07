@@ -1,20 +1,21 @@
-<div class='item'>
+<div class='table'>
   <table>
       <tr>
         <th>Title</th>
-        <th>Link</th>
-        <th>Content</th>
         <th>Unique Data</th>
-        <th>Source</th>
       </tr>
     <% @items_response.each do |item| %>
       <tr>
         <% item_link = item["content"]['descriptiveNonRepeating']["record_link"] %>
-        <td><%= item["content"]["descriptiveNonRepeating"]["title_sort"] %></td>
-        <td><a href= "<%= item_link %>" >Link</a></td>
-        <td><%= item["content"] %></td>
+        <td><ul>
+          <li><%= item["content"]["descriptiveNonRepeating"]["title_sort"] %></li>
+          <li><a href= "<%= item_link %>" >Link to Smithsonian Resource</a></li>
+          <li><%= item["content"]["descriptiveNonRepeating"]["data_source"]%></li>
+          <li><%= item["content"]["descriptiveNonRepeating"]["record_ID"] %></li>
+          <li><%= item["url"]%></li>
+          <li><%= link_to "More Details", "item/?id=#{item["url"]}", id:"#{item["url"]}" %></li>
+        </ul></td>
         <td><%= item["content"]["descriptiveNonRepeating"]%></td>
-        <td><%= item["content"]["descriptiveNonRepeating"]["data_source"]%></td>
       </tr>
     <% end %>
   </table>

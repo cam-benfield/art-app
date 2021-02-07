@@ -29,5 +29,9 @@
   },
   "devDependencies": {
     "webpack-dev-server": "^3.11.2"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   }
 }
