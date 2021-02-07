@@ -27,6 +27,7 @@ Place that API Key into a directory in ``art-app/.secret/smithsonian.key``.
  - [Ruby on Rails Guide](https://guides.rubyonrails.org/layouts_and_rendering.html#rendering-by-default-convention-over-configuration-in-action)
  - [Rails Girls Guide](https://guides.railsgirls.com/design-html-css)
  - [Backgrounds](https://www.toptal.com/designers/subtlepatterns/)
+ - [Bootstrap](https://getbootstrap.com/s)
 
 
 This README would normally document whatever steps are necessary to get the
@@ -39,7 +40,5 @@ Things you may want to cover:
 * System dependencies
 
 * Configuration
-
-* Database creation
 
 * Database initialization
